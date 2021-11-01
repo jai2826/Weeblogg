@@ -1,0 +1,244 @@
+body{
+    max-width: 85%;
+    margin: auto;
+}
+.post_container{
+    display: flex;
+    flex-direction: column;
+}
+.post_container form input{
+    display: flex;
+    /* flex-direction: column; */
+    height: 30px;
+    width: 250px;
+}
+.post_container form button{
+    display: flex;
+    /* flex-direction: column; */
+    height: 30px;
+    width: 250px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+/* LAYOUT TEMPLATE STYLING */
+li a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+.navbar{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(115, 41, 199);
+    position: sticky;
+    top: 0%;
+    /* border: 3px solid rgb(172, 169, 169); */
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* margin: 2em 8em ;    */
+}
+.navbar ul>li{
+    list-style: none;
+    margin: 5px 10px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Balsamiq Sans', cursive;
+    border: 2px ;
+    border-radius: 16px ;
+}
+.navbar ul>li:hover{
+    background: blanchedalmond;
+}
+.navbar ul li ul.programming li{
+    list-style: none;
+    margin: 5px 10px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Balsamiq Sans', cursive;
+    border: 2px ;
+    border-radius: 16px ;
+}
+.navbar ul li ul.programming li:hover{
+    background: blanchedalmond;
+}
+.foot div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(115, 41, 199);
+    font-size: 18px;
+    font-family: 'Balsamiq Sans', cursive;
+    height: 9vh;
+}
+.navbar ul li ul.programming{
+    list-style-type: none;
+    display: block;
+    background-color:rgb(115, 41, 199);
+    padding: 6px 16px;
+    position: absolute;
+    width: max-content;
+    z-index: 99999;
+    left: 60%;
+    opacity: 0;
+    pointer-events: none;
+}
+.navbar ul li:hover ul.programming{
+    opacity: 1;
+    pointer-events: auto;
+    animation: moveup .4s ease-in-out forwards;
+}
+@keyframes moveup{
+    0%{
+     opacity: 0;
+     transform:  translateY(40px);
+    }
+    100%{
+    opacity: 1;
+    transform:  translateY(9px);
+    }
+}
+.navbar div.hamburger{
+    display: none;
+}
+
+.footercontainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 3px solid rgb(172, 169, 169) ;
+}
+.footercontainer > div{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    margin: 0 20px;
+    font-size: 16px;
+}
+.footercontainer > div ul{
+    padding: 0px;
+}
+.footercontainer > div h4{
+    padding: 5px;
+    font-size: 18px;
+}
+.footercontainer > div ul li a{
+    color: blueviolet;
+}
+/* HOME PAGE STYLING */
+h1{
+   font-family: 'Nova Mono', monospace;
+}
+.intro{
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: blanchedalmond;
+   border: 3px solid rgb(172, 169, 169);
+   margin: 10px 0;
+}
+.intro div{
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+div.introimg{
+    height: 180px;
+}
+.introimg img{
+  height: 100%;
+  width: 100%;
+}
+.intro div div.para{
+    display: flex;
+    flex-direction: row;
+    color:darkblue;
+    padding: 15px;
+}
+div.para p{
+    font-size: 18px;
+    padding: 20px 50px;
+    
+}
+.feeds{
+    display: flex;     
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin: 6px 0;
+    /* height: 120vh; */
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32%;
+    height: 420px;
+    margin: 6px 0;
+    background: rgb(172, 169, 169);
+}
+.cards div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+.cards div div.img{
+    /* width: px; */
+    height: 290px;
+}
+.cards div div.img img{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid grey; */
+} 
+.cards div p{
+    margin: 2px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    background: blanchedalmond;
+    height: 80px;
+}
+
+/* Sign In/Up  Page */
+.signincontainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center ;
+   margin: 10px 0;
+   background: blanchedalmond;
+   border: 2px solid rgb(172, 169, 169);
+}
+.signincontainer div{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center ;
+   width: 400px;
+}
+.signincontainer div h5{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 20px;
+    width: 40%;    
+}
+.signincontainer div input.signin_input{
+    height: 20px;
+    width: 80%;
+}

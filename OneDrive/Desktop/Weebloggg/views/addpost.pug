@@ -1,0 +1,10 @@
+extend layout.pug 
+block content
+  div.post_container
+    form(action="/post" method="post") 
+      input(type='text' name='title' placeholder='Enter the title')
+      input(type='text' name='img' placeholder='Enter the image')
+      input(type='text' name='content' placeholder='Enter the content')
+      input(type='text' name='author' placeholder='Enter the author')
+      input(type='text' name='category' placeholder='Enter the author')
+      input(type='submit') 

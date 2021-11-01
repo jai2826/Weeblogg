@@ -1,0 +1,153 @@
+@media screen and (max-width: 600px){
+    /* Layout Style */
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        background-color: rgb(115, 41, 199);
+        position: sticky;
+        top: 0%;
+        height: 45vh;
+        transition: all .5s ease-out;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: left;
+        transition: all .5s ease-in;
+    }
+    .navbar div.hamburger {
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 5px;
+        margin: 3px;
+        align-self: flex-end;
+        border: 1px solid blanchedalmond;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+    .navbar div.hamburger .line{
+        height: 1px;
+        width: 28px;
+        background-color: blanchedalmond;   
+    }
+    .h-nav{
+        height: 40px;
+        /* transition: all 1s ease-in-out; */
+
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .navbar div.hamburger .line{
+        margin: 2px 0;
+        height: 1px;
+    }
+    .navbar ul li{
+        margin: 2px 5px;
+        padding: 8px;
+        font-size: 16px;
+    }
+    .navbar ul li:hover{
+        background: blanchedalmond;
+    }
+    .navbar ul li ul.programming{
+        left: 0%;
+    }
+    .footercontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        border: 3px solid rgb(172, 169, 169) ;
+    }
+    .footercontainer > div{
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0px;
+        font-size: 12px;
+    }
+    .footercontainer > div ul{
+        padding: 0px;
+    }
+    .footercontainer > div h4{
+        padding: 5px;
+        font-size: 14px;
+    }
+    .footercontainer > div ul li a{
+        color: blueviolet;
+    }
+    /* HOME PAge styling */
+    div.introimg{
+        display: none;
+    }
+    .feeds{
+        display: flex;     
+        flex-direction: row;
+        justify-content: space;
+        align-content: space-between;
+        flex-wrap: wrap;
+        margin: 6px 0;
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32.5%;
+        height: 310px;
+        margin: 2px 0;
+        background: rgb(172, 169, 169);
+    }
+    .cards div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+    }
+    .cards div div.img{
+        /* width: px; */
+        height: 204px;
+    }
+    .cards div div.img img{
+        height: 100%;
+        width: 100%;
+        /* border: 2px solid grey; */
+    } 
+    .cards div p{
+        margin: 2px;
+        padding: 8px 20px;
+        display: flex;
+        align-items: center;
+        background: blanchedalmond;
+        height: 80px;
+    }
+    .footercontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        border: 3px solid rgb(172, 169, 169) ;
+    }
+    .footercontainer > div{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 10px;
+        font-size: 13px;
+    }
+    .footercontainer > div ul{
+        padding: 0px;
+    }
+    .footercontainer > div h4{
+        /* padding: px; */
+        font-size: 15px;
+    }
+    .footercontainer > div ul li a{
+        color: blueviolet;
+    }
+}

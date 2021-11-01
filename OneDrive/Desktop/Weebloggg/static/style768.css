@@ -1,0 +1,76 @@
+@media screen and (max-width: 768px){
+/* Layout Style */
+body{
+    max-width: 100%;
+    margin: auto;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 4px 8px;
+    padding: 10px;
+    font-size: 18px;
+}
+.footercontainer > div{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    margin: 0 8px;
+    font-size: 16px;
+}
+.footercontainer > div ul{
+    padding: 0px;
+}
+.footercontainer > div h4{
+    padding: 2px;
+    font-size: 18px;
+}
+.footercontainer > div ul li a{
+    color: blueviolet;
+}
+/* HOME PAge styling */
+div.introimg{
+    display: none;
+}
+.feeds{
+    display: flex;     
+    flex-direction: row;
+    justify-content: space;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin: 6px 0;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32.5%;
+    height: 310px;
+    margin: 2px 0;
+    background: rgb(172, 169, 169);
+}
+.cards div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+.cards div div.img{
+    /* width: px; */
+    height: 204px;
+}
+.cards div div.img img{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid grey; */
+} 
+.cards div p{
+    margin: 2px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    background: blanchedalmond;
+    height: 80px;
+}
+
+}
