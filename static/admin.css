@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap');
+body{
+    max-width: 85%;
+    margin: auto;
+}
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    color: black;
+}
+.disabled{
+    cursor: not-allowed;
+    /* pointer-events: none; */
+    opacity: 0.8;
+}
+
+   
+/* Navbar */
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(115, 41, 199);
+    margin: 2px;
+}
+.navbar div.logo{
+    height: 60px;
+    width: auto;
+    margin: 2px;
+}
+.navbar div.logo img{
+    margin: 2px;
+    height: 56px;
+    width: auto;
+}
+.navbar p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-family: 'Baloo Paaji 2', cursive;    
+    font-size: 25px;
+}
+/* navigation */
+section.dashpage{
+    display: flex;
+    flex-direction: row;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 22%;
+    background-color: rgb(115, 41, 199);
+    color: black;
+    margin: 2px;
+    /* align-items: center; */
+}
+.navigation h3.dashboard{
+    margin: 5px;
+    padding: 10px;
+    align-self: center;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+.navigation div.menu{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+    overflow-y: auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.navigation div.menu a{
+    padding: 5px;
+    width: 90%;
+    display: flex;
+    font-family: Balsamiq sans;
+    font-size: 20px;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.navigation div.menu a:hover{
+    background-color: blanchedalmond;
+}
+
+
+
+/* Post.pug */
+.post{
+    margin: 2px;
+    width: 78%;
+}
+.postheader{
+    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    height: 40px;
+    margin: 2px;
+    padding: 0 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.postheader a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+}
+.postheader a:hover{
+    background-color: rgb(115, 41, 199);
+}
+.postcontainer{
+    background-color: blanchedalmond;
+    margin: 2px; 
+    padding: 5px;
+}
+.postmenu{
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.postmenu a{
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0;
+    padding: 5px;
+    font-size: 16px;
+    font-family: Balsamiq sans;
+}
+.postmenu a:hover{
+    border-radius: 10px;
+    background-color: rgb(115, 41, 199);
+}
+
+/* Addpost */
+.addpost{
+    display: flex;
+    flex-direction: column;
+}
+.addpost form input{
+    display: flex;
+    height: 30px;
+    width: 250px;
+}
+.addpost form button{
+    display: flex;
+    height: 30px;
+    width: 250px;
+}
+
+/* Admins */
+.admins{
+    margin: 2px;
+    width: 78%;
+}
+.adminsheader{
+    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    height: 40px;
+    margin: 2px;
+    padding: 0 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.adminsheader a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+}
+.adminsheader a:hover{
+    background-color: rgb(115, 41, 199);
+}
+.adminscontainer{
+    background-color: blanchedalmond;
+    margin: 2px; 
+    padding: 5px;
+}
+.adminsmenu{
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.adminsmenu a{
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0;
+    padding: 5px;
+    font-size: 16px;
+    font-family: Balsamiq sans;
+}
+.adminsmenu a:hover{
+    border-radius: 10px;
+    background-color: rgb(115, 41, 199);
+}
+
+/* Employee */
+.employee{
+    margin: 2px;
+    width: 78%;
+}
+.employeeheader{
+    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    height: 40px;
+    margin: 2px;
+    padding: 0 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.employeeheader a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+}
+.employeeheader a:hover{
+    background-color: rgb(115, 41, 199);
+}
+.employeecontainer{
+   background-color: blanchedalmond;
+   margin: 2px; 
+   padding: 5px;
+}
+.employeemenu{
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.employeemenu a{
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 0;
+    padding: 5px;
+    font-size: 16px;
+    font-family: Balsamiq sans;
+}
+.employeemenu a:hover{
+    border-radius: 10px;
+    background-color: rgb(115, 41, 199);
+}
+
+
+/* Settings */
+
+.settings{
+    margin: 2px;
+    width: 78%;
+}
+.settingsheader{
+    background-color: blanchedalmond;
+    display: flex;
+    height: 40px;
+    margin: 2px;
+    padding: 0 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.settingsheader h2{
+    font-family: Balsamiq Sans;
+}
+.darkmode{
+    display: flex;
+    width: 130px;
+    align-items: center;
+    justify-content: space-between;
+}
+.basic{
+    background-color: blanchedalmond;
+    display: flex;
+    margin: 2px;
+    padding: 0 5px;
+}
+.basic h3{
+font-family: Balsamiq Sans;
+}
+
+
+
+
+/* Dark Mode switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3C3C3C;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2.25px;
+    bottom: 2.25px;
+    /* align-self: center; */
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #0E6EB8;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(26px);
+}
+
+/*------ ADDED CSS ---------*/
+/* .slider:after {
+    content: 'DISABLED';
+    color: white;
+    display: block;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-size: px;
+    font-family: Verdana, sans-serif;
+} */
+
+/* input:checked + .slider:after {
+    content: 'ENABLED';
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(115, 41, 199);
+    font-size: 18px;
+    font-family: 'Balsamiq Sans', cursive;
+    height: 9vh;
+}

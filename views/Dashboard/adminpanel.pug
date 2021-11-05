@@ -1,0 +1,39 @@
+- let newpage = page
+doctype html 
+html
+  head
+    title Weeeblogg/Admin 
+    link(rel="stylesheet" href="/static/admin.css")
+    script(src="https://kit.fontawesome.com/d7104b8efc.js" crossorigin="anonymous")
+
+  body  
+    block navbar
+      div.navbar 
+        div.logo 
+          img(src="/static/img/random.jpg", alt="Logo")
+        p Weeblogg! Administration
+
+    block content
+      section.dashpage
+        include include/nav
+
+        if(page == "post")
+          include include/post
+        if(page == "addpost")
+          include include/addpost
+        if(page == "admins")
+          include include/admins
+        if(page == "employee")
+          include include/employee
+        if(page == "settings")
+          include include/settings
+
+        //- if(message)
+        //-   h1.message=message
+
+
+    block foot
+      footer.foot 
+      //- div
+      //-   | © 2021 Weeblogg All rights reserved
+  script(src="") 
