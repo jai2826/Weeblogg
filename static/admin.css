@@ -23,7 +23,7 @@ body{
 .navbar{
     display: flex;
     align-items: center;
-    background-color: rgb(115, 41, 199);
+    background-color: #fc4445;
     margin: 2px;
 }
 .navbar div.logo{
@@ -54,7 +54,7 @@ section.dashpage{
     flex-direction: column;
     height: 100vh;
     width: 22%;
-    background-color: rgb(115, 41, 199);
+    background-color: #fc4445;
     color: black;
     margin: 2px;
     /* align-items: center; */
@@ -85,7 +85,7 @@ section.dashpage{
     border-radius: 10px;
 }
 .navigation div.menu a:hover{
-    background-color: blanchedalmond;
+    background-color: #3feee6;
 }
 
 
@@ -96,8 +96,8 @@ section.dashpage{
     width: 78%;
 }
 .postheader{
-    background-color: blanchedalmond;
-    /* background-color: blanchedalmond; */
+    background-color: #3feee6;
+    /* background-color: #3feee6; */
     display: flex;
     height: 40px;
     margin: 2px;
@@ -115,10 +115,10 @@ section.dashpage{
     border-radius: 10px;
 }
 .postheader a:hover{
-    background-color: rgb(115, 41, 199);
+    background-color: #fc4445;
 }
 .postcontainer{
-    background-color: blanchedalmond;
+    background-color: #3feee6;
     margin: 2px; 
     padding: 5px;
 }
@@ -139,7 +139,7 @@ section.dashpage{
 }
 .postmenu a:hover{
     border-radius: 10px;
-    background-color: rgb(115, 41, 199);
+    background-color: #fc4445;
 }
 
 /* Addpost */
@@ -164,8 +164,8 @@ section.dashpage{
     width: 78%;
 }
 .adminsheader{
-    background-color: blanchedalmond;
-    /* background-color: blanchedalmond; */
+    background-color: #3feee6;
+    /* background-color: #3feee6; */
     display: flex;
     height: 40px;
     margin: 2px;
@@ -183,10 +183,10 @@ section.dashpage{
     border-radius: 10px;
 }
 .adminsheader a:hover{
-    background-color: rgb(115, 41, 199);
+    background-color: #fc4445;
 }
 .adminscontainer{
-    background-color: blanchedalmond;
+    background-color: #3feee6;
     margin: 2px; 
     padding: 5px;
 }
@@ -207,7 +207,7 @@ section.dashpage{
 }
 .adminsmenu a:hover{
     border-radius: 10px;
-    background-color: rgb(115, 41, 199);
+    background-color: #fc4445;
 }
 
 /* Employee */
@@ -216,8 +216,8 @@ section.dashpage{
     width: 78%;
 }
 .employeeheader{
-    background-color: blanchedalmond;
-    /* background-color: blanchedalmond; */
+    background-color: #3feee6;
+    /* background-color: #3feee6; */
     display: flex;
     height: 40px;
     margin: 2px;
@@ -235,10 +235,10 @@ section.dashpage{
     border-radius: 10px;
 }
 .employeeheader a:hover{
-    background-color: rgb(115, 41, 199);
+    background-color: #fc4445;
 }
 .employeecontainer{
-   background-color: blanchedalmond;
+   background-color: #3feee6;
    margin: 2px; 
    padding: 5px;
 }
@@ -259,7 +259,7 @@ section.dashpage{
 }
 .employeemenu a:hover{
     border-radius: 10px;
-    background-color: rgb(115, 41, 199);
+    background-color: #fc4445;
 }
 
 
@@ -270,7 +270,7 @@ section.dashpage{
     width: 78%;
 }
 .settingsheader{
-    background-color: blanchedalmond;
+    background-color: #3feee6;
     display: flex;
     height: 40px;
     margin: 2px;
@@ -288,7 +288,7 @@ section.dashpage{
     justify-content: space-between;
 }
 .basic{
-    background-color: blanchedalmond;
+    background-color: #3feee6;
     display: flex;
     margin: 2px;
     padding: 0 5px;
@@ -396,7 +396,7 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(115, 41, 199);
+    background-color:#fc4445;
     font-size: 18px;
     font-family: 'Balsamiq Sans', cursive;
     height: 9vh;

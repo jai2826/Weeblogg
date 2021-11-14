@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     max-width: 1550px;
     width: 85%;
@@ -19,7 +23,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(115, 41, 199);
+    background-color:  #FC4445;
     position: sticky;
     top: 0%;
     /* border: 3px solid rgb(172, 169, 169); */
@@ -41,7 +45,7 @@ li{
     border-radius: 16px ;
 }
 .navbar ul>li:hover{
-    background: blanchedalmond;
+    background: #3FEEE6;
 }
 .navbar ul li ul.programming li{
     list-style: none;
@@ -53,13 +57,13 @@ li{
     border-radius: 16px ;
 }
 .navbar ul li ul.programming li:hover{
-    background: blanchedalmond;
+    background: #3FEEE6;
 }
 .foot div{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(115, 41, 199);
+    background-color: #FC4445;
     font-size: 18px;
     font-family: 'Balsamiq Sans', cursive;
     height: 9vh;
@@ -67,7 +71,7 @@ li{
 .navbar ul li ul.programming{
     list-style-type: none;
     display: block;
-    background-color:rgb(115, 41, 199);
+    background-color: #FC4445;
     padding: 6px 16px;
     position: absolute;
     width: max-content;
@@ -127,7 +131,7 @@ h1{
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   background-color: blanchedalmond;
+   background-color: #3FEEE6;
    border: 3px solid rgb(172, 169, 169);
    margin: 10px 0;
 }
@@ -196,47 +200,19 @@ div.para p{
     padding: 20px 40px;
     display: flex;
     align-items: center;
-    background: blanchedalmond;
+    background: #3FEEE6;
     height: 80px;
 }
 
 /* Sign In/Up  Page */
-
-/* .signincontainer {
-
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center ;
-   margin: 10px 0;
-   background: blanchedalmond;
-   border: 2px solid rgb(172, 169, 169);
-}
-.signincontainer div{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center ;
-   width: 400px;
-}
-.signincontainer div h5{
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    height: 20px;
-    width: 40%;    
-}
-.signincontainer div input.signin_input{
-    height: 20px;
-    width: 80%;
-} */
-
 .signin {
-    background-color: blanchedalmond;    
+    background-color: #3FEEE6;    
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 5px 0;
+    font-family: 'Balsamiq Sans', cursive;
+
 }
 .signin>div{
     display: flex;
@@ -247,7 +223,8 @@ div.para p{
     width: 15rem;
     margin: 1rem;
     padding: 1rem;
-    border: 2px solid rgb(115, 41, 199);
+    border: 2px solid  #FC4445;
+    border-radius: 20px;
 }
 .signinform{
     display: flex;
@@ -258,10 +235,22 @@ div.para p{
 .signinform div{
     display: flex;
     flex-direction: row;
-    width: max-content;
-    height: 50px;
+    align-items: center;
+    width: 15rem;
+    justify-content: space-between;
+    height: 1.5rem;
+    padding: .4rem;
 }
+.signinform div input{
+   outline: none;
+   background-color: #3FEEE6;
+   border: none;
+   border-bottom: 1px solid #FC4445;
+}
+
 .signinform button{
     width: 100px;
     height: 20px;
+    font-family: 'Balsamiq Sans', cursive;
 }
+
