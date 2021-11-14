@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
 body{
-    max-width: 85%;
+    max-width: 1550px;
+    width: 85%;
     margin: auto;
 }
 
@@ -200,7 +201,9 @@ div.para p{
 }
 
 /* Sign In/Up  Page */
-.signincontainer {
+
+/* .signincontainer {
+
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -226,4 +229,39 @@ div.para p{
 .signincontainer div input.signin_input{
     height: 20px;
     width: 80%;
+} */
+
+.signin {
+    background-color: blanchedalmond;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+.signin>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: 15rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid rgb(115, 41, 199);
+}
+.signinform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signinform div{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: 50px;
+}
+.signinform button{
+    width: 100px;
+    height: 20px;
 }

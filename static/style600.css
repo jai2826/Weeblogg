@@ -1,4 +1,7 @@
 @media screen and (max-width: 600px){
+    body{
+        width: 100%;
+    }
     /* Layout Style */
     .navbar{
         display: flex;
@@ -8,7 +11,7 @@
         background-color: rgb(115, 41, 199);
         position: sticky;
         top: 0%;
-        height: 45vh;
+        height: 100vh;
         transition: all .5s ease-out;
     }
     .navbar ul{

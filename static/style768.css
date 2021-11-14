@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px){
 /* Layout Style */
 body{
-    max-width: 100%;
+    width: 100%;
     margin: auto;
 }
 .navbar ul li{

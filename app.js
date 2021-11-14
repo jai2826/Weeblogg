@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 const app = express();
 const port =  80;
 const Post = require('./routes/postR')
-const Admin = require('./routes/authdemo.js')
+const Admin = require('./routes/AdminR.js')
 const Admins = require('./routes/adminsR.js')
 const Employee = require('./routes/employeeR.js')
 const Settings = require('./routes/settingsR.js')
@@ -40,24 +40,39 @@ app.set('views', path.join(__dirname, 'views')) // Set the views directory
 
 // ENDPOINTS
 app.get('/', (req, res) => {
-  const params ={}
-  res.render('public/home.pug', params)
+  res.render('public/layout.pug', {
+    page: "home"
+  })
 })
 app.get('/programming', (req, res) => {
-  const params = {}
-  res.status(200).render('public/programming.pug', params)
+  res.status(200).render('public/layout.pug', {
+    page: "programming"
+  })
 })
 app.get('/gamming', (req, res) => {
-  const params = {}
-  res.status(200).render('public/gamming.pug', params)
+  res.status(200).render('public/layout.pug', {
+    page: "gamming"
+  })
 })
 app.get('/launchpad', (req, res) => {
-  const params = {}
-  res.status(200).render('public/launchpad.pug', params)
+  res.status(200).render('public/layout.pug', {
+    page: "launchpad"
+  })
 })
 app.get('/news', (req, res) => {
-  const params = {}
-  res.status(200).render('public/news.pug', params)
+  res.status(200).render('public/layout.pug', {
+    page: "news"
+  })
+})
+app.get('/signin', (req, res) => {
+  res.status(200).render('public/layout.pug', {
+    page: "signin"
+  })
+})
+app.get('/signup', (req, res) => {
+  res.status(200).render('public/layout.pug', {
+    page: "signup"
+  })
 })
 
 
