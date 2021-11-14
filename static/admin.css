@@ -23,7 +23,7 @@ body{
 .navbar{
     display: flex;
     align-items: center;
-    background-color: #fc4445;
+    background-color: #fc3333;
     margin: 2px;
 }
 .navbar div.logo{
@@ -54,7 +54,7 @@ section.dashpage{
     flex-direction: column;
     height: 100vh;
     width: 22%;
-    background-color: #fc4445;
+    background-color: #fc3333;
     color: black;
     margin: 2px;
     /* align-items: center; */
@@ -115,7 +115,7 @@ section.dashpage{
     border-radius: 10px;
 }
 .postheader a:hover{
-    background-color: #fc4445;
+    background-color: #fc3333;
 }
 .postcontainer{
     background-color: #3feee6;
@@ -139,7 +139,7 @@ section.dashpage{
 }
 .postmenu a:hover{
     border-radius: 10px;
-    background-color: #fc4445;
+    background-color: #fc3333;
 }
 
 /* Addpost */
@@ -183,7 +183,7 @@ section.dashpage{
     border-radius: 10px;
 }
 .adminsheader a:hover{
-    background-color: #fc4445;
+    background-color: #fc3333;
 }
 .adminscontainer{
     background-color: #3feee6;
@@ -207,7 +207,7 @@ section.dashpage{
 }
 .adminsmenu a:hover{
     border-radius: 10px;
-    background-color: #fc4445;
+    background-color: #fc3333;
 }
 
 /* Employee */
@@ -235,7 +235,7 @@ section.dashpage{
     border-radius: 10px;
 }
 .employeeheader a:hover{
-    background-color: #fc4445;
+    background-color: #fc3333;
 }
 .employeecontainer{
    background-color: #3feee6;
@@ -259,7 +259,7 @@ section.dashpage{
 }
 .employeemenu a:hover{
     border-radius: 10px;
-    background-color: #fc4445;
+    background-color: #fc3333;
 }
 
 
@@ -396,7 +396,7 @@ input:checked + .slider:before {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#fc4445;
+    background-color:#fc3333;
     font-size: 18px;
     font-family: 'Balsamiq Sans', cursive;
     height: 9vh;

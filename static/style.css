@@ -23,7 +23,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  #FC4445;
+    background-color:  #fc3333;
     position: sticky;
     top: 0%;
     /* border: 3px solid rgb(172, 169, 169); */
@@ -63,7 +63,7 @@ li{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FC4445;
+    background-color: #fc3333;
     font-size: 18px;
     font-family: 'Balsamiq Sans', cursive;
     height: 9vh;
@@ -71,7 +71,7 @@ li{
 .navbar ul li ul.programming{
     list-style-type: none;
     display: block;
-    background-color: #FC4445;
+    background-color: #fc3333;
     padding: 6px 16px;
     position: absolute;
     width: max-content;
@@ -223,7 +223,7 @@ div.para p{
     width: 15rem;
     margin: 1rem;
     padding: 1rem;
-    border: 2px solid  #FC4445;
+    border: 2px solid  #fc3333;
     border-radius: 20px;
 }
 .signinform{
@@ -245,10 +245,58 @@ div.para p{
    outline: none;
    background-color: #3FEEE6;
    border: none;
-   border-bottom: 1px solid #FC4445;
+   border-bottom: 1px solid #fc3333;
 }
 
 .signinform button{
+    width: 100px;
+    height: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+.signup {
+    background-color: #3FEEE6;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+    font-family: 'Balsamiq Sans', cursive;
+
+}
+.signup>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: 15rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid  #fc3333;
+    border-radius: 20px;
+}
+.signupform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signupform div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 15rem;
+    justify-content: space-between;
+    height: 1.5rem;
+    padding: .4rem;
+}
+.signupform div input{
+   outline: none;
+   background-color: #3FEEE6;
+   border: none;
+   border-bottom: 1px solid #fc3333;
+}
+
+.signupform button{
     width: 100px;
     height: 20px;
     font-family: 'Balsamiq Sans', cursive;
