@@ -224,7 +224,7 @@ div.para p{
     margin: 1rem;
     padding: 1rem;
     border: 2px solid  #fc3333;
-    border-radius: 20px;
+    border-radius: 35px;
 }
 .signinform{
     display: flex;
@@ -272,7 +272,7 @@ div.para p{
     margin: 1rem;
     padding: 1rem;
     border: 2px solid  #fc3333;
-    border-radius: 20px;
+    border-radius: 35px;
 }
 .signupform{
     display: flex;
