@@ -25,7 +25,7 @@ router.post("/signup", async (req,res)=>{
         confirm: req.body.confirmpassword
     })
     await newuser.save();
-    res.render("../views/public/layout.pug",{
+    res.status(200).render("../views/public/layout.pug",{
         page: "signin"
     })
     } catch(err){
