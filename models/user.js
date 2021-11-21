@@ -6,19 +6,16 @@ const user = new mongoose.Schema(
             type: String,
             required: true
         },
-        contact: {
-            type: Number,
+        email: {
+            type : String,
             required: true,
-            unique:true
-        },
-        username: {
-            type: String,
-            required: true,
-            unique:true
         },
         password: {
             type: String,
-            default: "Weeblog@123",
+            required: true
+        },
+        confirm: {
+            type: String,
             required: true
         },
     },

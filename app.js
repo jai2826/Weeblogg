@@ -9,6 +9,7 @@ const Admin = require('./routes/AdminR.js')
 const Admins = require('./routes/adminsR.js')
 const Employee = require('./routes/employeeR.js')
 const Settings = require('./routes/settingsR.js')
+const Authentication = require('./routes/Authentication.js')
 
 
 
@@ -22,6 +23,7 @@ mongoose
   app.use(Admins)
   app.use(Employee)
   app.use(Settings)
+  app.use(Authentication)
 
 
 app.use(express.json());
@@ -64,16 +66,7 @@ app.get('/news', (req, res) => {
     page: "news"
   })
 })
-app.get('/signin', (req, res) => {
-  res.status(200).render('public/layout.pug', {
-    page: "signin"
-  })
-})
-app.get('/signup', (req, res) => {
-  res.status(200).render('public/layout.pug', {
-    page: "signup"
-  })
-})
+
 
 
 
