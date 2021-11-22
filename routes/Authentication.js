@@ -17,35 +17,21 @@ router.get('/signup', (req, res) => {
   })
 })
 router.post("/signup", async (req,res)=>{
-  // try{
-  //   const newuser = user({
-  //     name:req.body.name,
-  //     email:req.body.email,
-  //     password:req.body.password,
-  //     confirm:req.body.confirmpassword
-  //   })
-  //   console.log(newuser);
-  //   // await newuser.save();
-  //   // res.status(200).render('../views/public/layout.pug', {
-  //   //   page: "signin"
-  //   // })
+  try{
+    const newuser = user({
+      name:req.body.name,
+      email:req.body.email,
+      password:req.body.password,
+      confirm:req.body.confirmpassword
+    })
+    console.log(newuser);
+    // await newuser.save();
+    // res.status(200).render('../views/public/layout.pug', {
+    //   page: "signin"
+    // })
 
-  // }catch(err){
-  //   res.render(err);
-  // }
-  var newUser = new User({
-    name: req.body.name,
-    email: req.body.email,
-    password: req.body.password,
-    confirm: req.body.confirmpassword
-  });
-  await newUser
-    .save()
-    .then(() => {
-      res.status(200).send(newUser);
-    })
-    .catch(err => {
-      console.log("Error is ", err.message);
-    })
+  }catch(err){
+    res.render(err);
+  }
 })
 module.exports = router;
