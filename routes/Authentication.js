@@ -1,6 +1,6 @@
 const express  = require("express")
 const router = express.Router();
-const user = require("../models/user")
+const User = require("../models/user")
 
 
 router.use(express.json()) // for parsing application/json
@@ -17,19 +17,35 @@ router.get('/signup', (req, res) => {
   })
 })
 router.post("/signup", async (req,res)=>{
-    try{
-    const newuser = user({
-        name: req.body.name,
-        email : req.body.email,
-        password: req.body.password,
-        confirm: req.body.confirmpassword
+  // try{
+  //   const newuser = user({
+  //     name:req.body.name,
+  //     email:req.body.email,
+  //     password:req.body.password,
+  //     confirm:req.body.confirmpassword
+  //   })
+  //   console.log(newuser);
+  //   // await newuser.save();
+  //   // res.status(200).render('../views/public/layout.pug', {
+  //   //   page: "signin"
+  //   // })
+
+  // }catch(err){
+  //   res.render(err);
+  // }
+  var newUser = new User({
+    name: req.body.name,
+    email: req.body.email,
+    password: req.body.password,
+    confirm: req.body.confirmpassword
+  });
+  await newUser
+    .save()
+    .then(() => {
+      res.status(200).send(newUser);
     })
-    await newuser.save();
-    res.status(200).render("../views/public/layout.pug",{
-        page: "signin"
+    .catch(err => {
+      console.log("Error is ", err.message);
     })
-    } catch(err){
-        res.render(err);
-    }
 })
 module.exports = router;

@@ -6,3 +6,4 @@ const category = new mongoose.Schema({
         default: "Weeblog"
     }
 })
+module.eports = new mongoose.model("Category" , category)
