@@ -5,7 +5,7 @@ html
     link(rel="stylesheet", href="../static/style.css")
     link(rel="stylesheet", href="../static/style768.css")
     link(rel="stylesheet", href="../static/style600.css")
-    
+     
     body.container 
     nav.navbar#navbarid.h-nav 
         div.hamburger#burger 
@@ -25,11 +25,25 @@ html
                     li #[a(href="/") Web-Developement]
                     li #[a(href="/") JavaScript]
           //- li #[a(href="/") About Us]
-          //- li #[a(href="/signin") Sign In]
+          li #[a(href="/signup") Sign up]
           //- li #[a(href="/") Join Us]
           
 
     block content
+      if(page == "home")
+        include include/home.pug 
+      if(page == "gamming")
+        include include/gamming.pug 
+      if(page == "programming")
+        include include/programming.pug 
+      if(page == "launchpad")
+        include include/launchpad.pug 
+      if(page == "news")
+        include include/news.pug 
+      if(page == "signin")
+        include include/signin.pug 
+      if(page == "signup")
+        include include/signup.pug 
     block foot
     section.footerinfo 
       div.footercontainer 
@@ -54,7 +68,7 @@ html
         div.privacy
           h4 Your Privacy
           p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, natus. Enim nam porro possimus! Earum nesciunt vero eveniet a libero hic saepe voluptates explicabo ipsa?
-    footer.foot 
-      div
-        | © 2021 Weeblogg All rights reserved
+      footer.foot 
+        div
+          | © 2021 Weeblogg All rights reserved
     script(src="../static/index.js")

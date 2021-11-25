@@ -1,0 +1,13 @@
+section.signin
+  div  
+    form.signinform(action= "signin" method = "POST")
+        div    
+          h5 Email ID 
+          input(type='email' name='email')
+        div
+          h5 Password 
+          input(type='password' name='password' minlength="4")
+        button(type="submit") Sign in
+    div Don't have an account #[a(href="/signup") Sign Up]
+
+        
