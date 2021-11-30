@@ -1,0 +1,25 @@
+
+<section class="signup">
+  <div>
+    <form class="signupform" action="/signup" method="post">
+      <div>
+        <h5>Name </h5>
+        <input type="text" name="name"/>
+      </div>
+      <div>
+        <h5>Email ID </h5>
+        <input type="email" name="email"/>
+      </div>
+      <div> 
+        <h5>Password </h5>
+        <input type="password" id="password" name="password" onChange="onChange()"/>
+      </div>
+      <div>
+        <h5>Confirm Password </h5>
+        <input type="password" id="confirmpassword" name="confirmpassword" onChange="onChange()"/>
+      </div>
+      <button type="submit" id="submit">Register</button>
+    </form>
+    <div>Already have an account <a href="/signin">Sign in</a></div>
+  </div>
+</section>

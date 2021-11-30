@@ -7,7 +7,7 @@ router.use(express.json()) // for parsing application/json
 router.use(express.urlencoded({ extended: true }))
 router.get("/admin/settings", async (req,res)=>{
     try {
-        res.render("../views/Dashboard/adminpanel.pug", {
+        res.render("../views/Dashboard/adminpanel", {
             page: "settings"
         })
     } catch (err) {

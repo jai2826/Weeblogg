@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Weeeblogg </title>
+  <link rel="stylesheet" href="../static/style.css" />
+  <link rel="stylesheet" href="../static/style768.css" />
+  <link rel="stylesheet" href="../static/style600.css" />
+</head>
+
+<body class="container">
+  <nav class="navbar h-nav" id="navbarid">
+    <div class="hamburger" id="burger">
+      <hr class="line" />
+      <hr class="line" />
+      <hr class="line" />
+    </div>
+    <ul class="v-class" id="navlist">
+      <li><a href="/">Home</a></li>
+      <li><a href="/news">News</a> </li>
+      <li><a href="/launchpad">Launch Pad</a></li>
+      <li><a href="/gamming">Gaming</a></li>
+      <li><a href="/programming">Programming</a>
+        <ul class="programming">
+          <li><a href="/">C/C++a</a></li>
+          <li><a href="/">Python</a></li>
+          <li><a href="/">Java</a></li>
+          <li><a href="/">Web-Developement</a></li>
+          <li><a href="/">JavaScript</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <% if(page== "home") { %>
+   <%- include('include/home') -%>
+  <% } %>
+  <% if(page== "news") { %>
+   <%- include('include/news') -%>
+  <% } %>
+  <% if(page== "programming") { %>
+   <%- include('include/programming') -%>
+  <% } %>
+  <% if(page== "launchpad") { %>
+   <%- include('include/launchpad') -%>
+  <% } %>
+  <% if(page== "gamming") { %>
+   <%- include('include/gamming') -%>
+  <% } %>
+
+
+
+
+
+
+
+  <section class="footerinfo">
+    <div class="footercontainer">
+      <div class="aboutus">
+        <h4>About Us </h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quia itaque accusantium molestias,
+          unde reprehenderit numquam placeat vel, harum cum quis repellendus exercitationem omnis odit!</p>
+      </div>
+      <div class="links">
+        <h4>SiteLinks </h4>
+        <ul class="linkslist">
+          <li><a href="/">About Us</a> </li>
+          <li><a href="/">Contact</a> </li>
+          <li><a href="/">Privacy</a> </li>
+          <li><a href="/">Carriers</a> </li>
+          <li><a href="/">Advertise</a> </li>
+        </ul>
+      </div>
+      <div class="social">
+        <h4>Socials </h4>
+        <ul class="sociallist">
+          <li><a href="/">Twitter</a> </li>
+          <li><a href="/">Instagram</a> </li>
+          <li><a href="/">Facebook</a> </li>
+          <li><a href="/">Linkedin</a> </li>
+        </ul>
+      </div>
+      <div class="privacy">
+        <h4>Your Privacy</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, natus. Enim nam porro possimus! Earum
+          nesciunt vero eveniet a libero hic saepe voluptates explicabo ipsa?</p>
+      </div>
+    </div>
+    <footer class="foot">
+      <div>© 2021 Weeblogg All rights reserved</div>
+    </footer>
+  </section>
+  <script src="../static/index.js"></script>
+</body>
+
+</html>

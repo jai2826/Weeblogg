@@ -4,17 +4,27 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js -e html,css,js,pug,json"
+    "start": "nodemon app.js -e html,css,js,ejs,json"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur illum recusandae a excepturi quibusdam, veniam rerum eius quasi animi odio omnis, atque nobis saepe reprehenderit veritatis. Deserunt natus omnis blanditiis adipisci et quis, quia laborum aut cumque iure, eum expedita mollitia. Dolorum ratione veritatis cupiditate corporis. Aperiam exercitationem consequatur pariatur assumenda illum necessitatibus error voluptate consequuntur magni eius! Consectetur minus quaerat corporis. Nisi veritatis quaerat officia eum impedit facere dolorem repudiandae fugiat pariatur consequuntur, reiciendis commodi quae cupiditate dolore nobis repellat aperiam ad recusandae veniam libero laudantium! Distinctio quam illum praesentium cumque, eligendi voluptates aperiam laudantium porro asperiores, iste expedita aspernatur illo voluptatum quasi repellat vitae. Quia deserunt voluptas nemo expedita maxime. Illum aspernatur neque commodi placeat voluptas, quidem ea ut repellat tempora assumenda deserunt distinctio labore ratione sed deleniti reiciendis. Ipsum nobis soluta explicabo adipisci itaque! Sunt esse, deserunt modi voluptate blanditiis possimus quasi beatae velit, accusantium, asperiores dignissimos atque numquam qui molestias. Saepe laboriosam fugiat dignissimos labore ipsum, molestias doloribus sit cum modi nulla porro? Harum ipsa rerum ad doloribus dolor deserunt iste non error aliquid odio dolore asperiores dignissimos accusamus soluta, nesciunt pariatur? Ex blanditiis earum cupiditate corrupti illo consequatur voluptate ullam, maxime laudantium, vitae accusamus molestiae.",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
+    "livereload": "^0.9.3",
     "mongoose": "^6.0.8",
     "passport": "^0.5.0",
     "pug": "^3.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jai2826/Weeblogg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jai2826/Weeblogg/issues"
+  },
+  "homepage": "https://github.com/jai2826/Weeblogg#readme"
 }

@@ -14,10 +14,10 @@ const user = new mongoose.Schema(
             type: String,
             required: true
         },
-        confirm: {
+        confirmpassword: {
             type: String,
             required: true
-        },
+        }
     },
     {timestamps: true}
 )

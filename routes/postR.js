@@ -4,12 +4,17 @@ const path = require("path");
 const router = express.Router();
 const fs = require('fs')
 
+
+
+
+
+
 router.use(express.json()) // for parsing application/json
 router.use(express.urlencoded({ extended: true }))
 
 router.get("/admin/post", async (req,res)=>{
     try {
-        res.render("../views/Dashboard/adminpanel.pug", {
+        res.render("../views/Dashboard/adminpanel", {
             page: "post"
         })
     } catch (err) {
@@ -18,7 +23,7 @@ router.get("/admin/post", async (req,res)=>{
 })
 router.get("/admin/post/addpost", async (req,res)=>{
 try {
-        res.render("../views/Dashboard/adminpanel.pug", {
+        res.render("../views/Dashboard/adminpanel", {
             page: "addpost"
         })
     } catch (err) {
@@ -37,7 +42,7 @@ router.post("/admin/post/addpost", async (req, res) => {
             category : req.body.category
         })
         await blog.save();
-        res.render("../views/Dashboard/adminpanel.pug", {
+        res.render("../views/Dashboard/adminpanel", {
             page: "post"
         })
     } catch (err) {

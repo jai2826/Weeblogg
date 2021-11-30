@@ -1,0 +1,39 @@
+<!DOCTYPE html >
+<html>
+  <head>
+    <title>Weeeblogg/Admin </title>
+    <link rel="stylesheet" href="/static/admin.css"/>
+    <script src="https://kit.fontawesome.com/d7104b8efc.js" crossorigin="anonymous"></script>
+    <script> </script>
+  </head>
+  <body> 
+    <div class="navbar"> 
+      <div class="logo"> <img src="/static/img/random.jpg" alt="Logo"/></div>
+      <p>Weeblogg! Administration</p>
+    </div>
+    <section class="dashpage">
+      <%- include("include/nav") %>  
+
+      <% if(page=="adminsauth") {%>
+         <%- include("include/adminsauth") %>   
+      <% } %> 
+      <% if(page=="admins") {%>
+         <%- include("include/admins") %>   
+      <% } %> 
+      <% if(page=="post") {%>
+         <%- include("include/post") %>   
+      <% } %> 
+      <% if(page=="addpost") {%>
+         <%- include("include/addpost") %>   
+      <% } %> 
+      <% if(page=="employee") {%>
+         <%- include("include/employee") %>   
+      <% } %> 
+      <% if(page=="settings") {%>
+         <%- include("include/settings") %>   
+      <% } %> 
+
+    </section>
+    <footer class="foot"> </footer>
+  </body>
+</html>

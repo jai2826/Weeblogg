@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
+const livereload = require("livereload");
 const mongoose = require('mongoose')
 const app = express();
 const port =  80;
@@ -9,7 +10,7 @@ const Admin = require('./routes/AdminR.js')
 const Admins = require('./routes/adminsR.js')
 const Employee = require('./routes/employeeR.js')
 const Settings = require('./routes/settingsR.js')
-const Authentication = require('./routes/Authentication.js')
+// const Authentication = require('./routes/Authentication.js')
 const Public = require('./routes/PublicR.js')
 
 
@@ -23,7 +24,7 @@ mongoose
   app.use(Admins)
   app.use(Employee)
   app.use(Settings)
-  app.use(Authentication)
+  // app.use(Authentication)
   app.use(Public)    //having basic endpoints
 
 
@@ -33,11 +34,12 @@ app.use(express.urlencoded({extended: true}))
 
 
 
+
 // EXPRESS SPECIFIC STUFF
 app.use('/static', express.static('static')) // For serving static files
 
 // HBS SPECIFIC STUFF
-app.set('view engine', 'pug') // Set the template engine as phbs
+app.set('view engine', 'ejs') // Set the template engine as phbs
 app.set('views', path.join(__dirname, 'views')) // Set the views directory
 
 

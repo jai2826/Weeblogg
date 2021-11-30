@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap');
-body{
+/* body{
     max-width: 85%;
     margin: auto;
-}
+} */
 *{
     list-style: none;
     text-decoration: none;
@@ -88,6 +88,42 @@ section.dashpage{
     background-color: #3feee6;
 }
 
+/* Admins auth in */
+.adminsauth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Balsamiq Sans', cursive;
+    background-color: #3feee6;
+}
+.adminsauth form{
+    display: flex;
+    height: 60vh;
+    width: 30vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fc3333;
+    border-radius: 35px;
+}
+.adminsauth form div{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    margin: 4px;
+}
+.adminsauth form input{
+    outline: none;
+    background-color: #3feee6;
+    border: none;
+    border-bottom: 1px solid #fc3333;
+}
+.adminsauth form button{
+    height: 20px;
+    width: 100px;
+}
 
 
 /* Post.pug */
@@ -369,23 +405,6 @@ input:checked + .slider:before {
 /* input:checked + .slider:after {
     content: 'ENABLED';
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
