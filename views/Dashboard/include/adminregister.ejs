@@ -1,0 +1,35 @@
+<section class="adminsauth">
+    <h2>Please Register !!!</h2>
+    <div class="errorr">
+      <% if(typeof err != "undefined") {%> 
+      <h3><%=err %> </h3>
+      <% } %> 
+    </div>
+    <form action="/admin/register" method="POST" autocomplete="off">
+      <div>   
+        <label for="email">Email :</label>
+        <input type="email" name="email">
+      </div>
+      <div>   
+        <label for="contact">Phone Number :</label>
+        <input type="contact" name="contact">
+      </div>
+      <div>
+        <label for="passowrd">Password :</label>
+        <input type="password" name="password" id="mypassword"/>
+      </div>
+      <div>
+        <label for="confirmpassowrd"> Confirm Password :</label>
+        <input type="password" name="confirmpassword" id="myconfirmpassword"/>
+      </div>
+      <span class="showpassword"> 
+          <input type="checkbox" onclick="showpassword()"/>   Show password
+      </span>
+      <button type="submit">Register</button>
+      
+      <span class="random-btn">
+        Already Registered... 
+        <a href="/admin/signin">Signin</a>
+      </span>
+    </form>
+</section>

@@ -1,0 +1,26 @@
+<section class="adminsauth">
+  <h2>Please SignIn !!!</h2>
+  <div class="errorr">
+    <% if(typeof err !="undefined" ) {%>
+      <h3> <%=err %> </h3>
+      <% } %>
+  </div>
+  <form action="/admin/signin" method="POST" autocomplete="off">
+    <div>
+      <label for="email">Email :</label>
+      <input type="email" name="email">
+    </div>
+    <div>
+      <label for="passowrd">Password :</label>
+      <input type="password" name="password" id="mypassword" />
+    </div>
+    <span class="showpassword">
+      <input type="checkbox" onclick="showpassword()" /> Show password
+    </span>
+    <button type="submit">Sign in</button>
+    <span class="random-btn">
+      New User...
+      <a href="/admin/register">Please Register</a>
+    </span>
+  </form>
+</section>

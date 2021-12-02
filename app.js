@@ -1,7 +1,6 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
-const livereload = require("livereload");
 const mongoose = require('mongoose')
 const app = express();
 const port =  80;
@@ -10,7 +9,6 @@ const Admin = require('./routes/AdminR.js')
 const Admins = require('./routes/adminsR.js')
 const Employee = require('./routes/employeeR.js')
 const Settings = require('./routes/settingsR.js')
-// const Authentication = require('./routes/Authentication.js')
 const Public = require('./routes/PublicR.js')
 
 
@@ -24,7 +22,6 @@ mongoose
   app.use(Admins)
   app.use(Employee)
   app.use(Settings)
-  // app.use(Authentication)
   app.use(Public)    //having basic endpoints
 
 

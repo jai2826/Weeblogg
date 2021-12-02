@@ -4,7 +4,6 @@
     <title>Weeeblogg/Admin </title>
     <link rel="stylesheet" href="/static/admin.css"/>
     <script src="https://kit.fontawesome.com/d7104b8efc.js" crossorigin="anonymous"></script>
-    <script> </script>
   </head>
   <body> 
     <div class="navbar"> 
@@ -12,10 +11,17 @@
       <p>Weeblogg! Administration</p>
     </div>
     <section class="dashpage">
-      <%- include("include/nav") %>  
+      <% if(page != "adminregister") {%> 
+         <% if(page != "adminsignin") { %> 
+         <%- include("include/nav") %>  
+      <% } %> 
+      <% } %> 
 
-      <% if(page=="adminsauth") {%>
-         <%- include("include/adminsauth") %>   
+      <% if(page=="adminregister") {%>
+         <%- include("include/adminregister") %>   
+      <% } %> 
+      <% if(page=="adminsignin") {%>
+         <%- include("include/adminsignin") %>   
       <% } %> 
       <% if(page=="admins") {%>
          <%- include("include/admins") %>   
@@ -36,4 +42,5 @@
     </section>
     <footer class="foot"> </footer>
   </body>
+  <script src="/static/admin.js"></script>
 </html>
